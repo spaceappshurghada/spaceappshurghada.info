@@ -6,13 +6,13 @@ import "./globals.css"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "NASA Space Apps Hurghada - 2nd Edition, 2025",
+  title: "NASA Space Apps Hurghada",
   description:
     "Join the world's largest global hackathon in Hurghada, Egypt. October 4-6, 2025. Innovate using NASA's open data to solve problems on Earth and in space.",
   keywords: "NASA, Space Apps, NASA Space Apps, challenge, hackathon, Hurghada, Egypt, space, innovation, technology",
   authors: [{ name: "NASA Space Apps Hurghada Team" }],
   openGraph: {
-    title: "NASA Space Apps Hurghada - 2nd Edition, 2025",
+    title: "NASA Space Apps Hurghada",
     description: "Join the world's largest global hackathon in Hurghada, Egypt. October 4-6, 2025.",
     type: "website",
     locale: "en_US",
@@ -34,6 +34,7 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;400;600;700;800&family=Fira+Sans:wght@400;500;600;700;800&family=Fira+Code:wght@300;400;500;600&display=swap"
           rel="stylesheet"
         />
+        <link rel="icon" href="/favicons/favicon.ico" />
       </head>
       <body className={inter.className}>{children}</body>
     </html>
