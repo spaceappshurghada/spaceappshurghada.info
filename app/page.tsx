@@ -250,9 +250,9 @@ export default function NASASpaceAppsHurghada() {
             <div className="flex justify-center relative">
               {/* Main rectangular hero image */}
               <div className="relative">
-                <div className="w-96 h-64 rounded-lg overflow-hidden border-2 border-[#2E96F5]/30">
+                <div className="overflow-hidden border-2 border-[#2E96F5]/30 rounded-lg">
                   <Image
-                    src="/nasa-hackathon-wide-shot.png"
+                    src="/img/closing.jpg"
                     alt="NASA Space Apps participants collaborating"
                     width={384}
                     height={256}
@@ -290,7 +290,7 @@ export default function NASASpaceAppsHurghada() {
               <div className="relative">
                 <div className="w-full h-48 rounded-lg overflow-hidden border border-[#2E96F5]/30">
                   <Image
-                    src="/global-space-apps-map.png"
+                    src="/img/opening.jpg"
                     alt="Global NASA Space Apps Challenge locations"
                     width={640}
                     height={192}
