@@ -57,8 +57,26 @@ export default function NASASpaceAppsHurghada() {
 
   const teamMembers = [
     {
-      name: "Ismail Sherif",
-      role: "Chairman",
+      name: "Full Name",
+      role: "Title",
+      bio: "Tech leader and community builder passionate about space innovation",
+      image: "/tech-leader-headshot.png",
+    },
+    {
+      name: "Full Name",
+      role: "Title",
+      bio: "Tech leader and community builder passionate about space innovation",
+      image: "/tech-leader-headshot.png",
+    },
+    {
+      name: "Full Name",
+      role: "Title",
+      bio: "Tech leader and community builder passionate about space innovation",
+      image: "/tech-leader-headshot.png",
+    },
+    {
+      name: "Full Name",
+      role: "Title",
       bio: "Tech leader and community builder passionate about space innovation",
       image: "/tech-leader-headshot.png",
     },
@@ -97,6 +115,29 @@ export default function NASASpaceAppsHurghada() {
     },
   ]
 
+  const socials = [
+    {
+      name: "Facebook",
+      icon: "facebook",
+      url: "https://www.facebook.com/spaceappshurghada",
+    },
+    {
+      name: "LinkedIn",
+      icon: "linkedin",
+      url: "https://www.linkedin.com/company/spaceappshurghada",
+    },
+    {
+      name: "Instagram",
+      icon: "instagram",
+      url: "https://www.instagram.com/spaceappshurghada",
+    },
+    {
+      name: "GitHub",
+      icon: "github",
+      url: "https://github.com/spaceappshurghada",
+    },
+  ]
+
   return (
     <div className="min-h-screen bg-white text-gray-900 font-['Overpass']">
       {/* Navigation */}
@@ -109,7 +150,7 @@ export default function NASASpaceAppsHurghada() {
               </div>
               <div>
                 <div className="font-['Fira_Sans'] font-bold text-lg">NASA Space Apps Hurghada</div>
-                <div className="text-sm text-[#2E96F5]">2nd Edition, 2025</div>
+                <div className="text-sm text-[#2E96F5]">2nd Edition - 2025</div>
               </div>
             </div>
 
@@ -178,8 +219,8 @@ export default function NASASpaceAppsHurghada() {
             <div className="space-y-8">
               <div className="space-y-4">
                 <h1 className="font-['Fira_Sans'] font-bold text-4xl md:text-6xl lg:text-7xl leading-tight">
-                  NASA Space Apps Challenge
-                  <span className="block text-[#2E96F5]">Hurghada 2025</span>
+                  NASA Space Apps Hurghada
+                  <span className="block text-[#2E96F5]">2nd Edition</span>
                 </h1>
                 <p className="text-lg md:text-xl text-gray-600 max-w-2xl">
                   Join the world's largest global hackathon, where thousands innovate using NASA's open data to solve
@@ -190,7 +231,7 @@ export default function NASASpaceAppsHurghada() {
               <div className="flex flex-col sm:flex-row gap-4 items-start">
                 <div className="flex items-center space-x-2 text-[#2E96F5]">
                   <Calendar className="w-5 h-5" />
-                  <span className="font-semibold">October 4–6, 2025</span>
+                  <span className="font-semibold">October 4-6, 2025</span>
                 </div>
                 <div className="flex items-center space-x-2 text-[#2E96F5]">
                   <MapPin className="w-5 h-5" />
@@ -586,7 +627,7 @@ export default function NASASpaceAppsHurghada() {
                 {/* NASA Space Apps Small Logo */}
                 <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center p-2">
                   <Image
-                    src="/nasa-space-apps-small-logo.png"
+                    src="/img/logo.png"
                     alt="NASA Space Apps Logo"
                     width={32}
                     height={32}
@@ -594,8 +635,8 @@ export default function NASASpaceAppsHurghada() {
                   />
                 </div>
                 <div>
-                  <div className="font-['Fira_Sans'] font-bold">NASA Space Apps</div>
-                  <div className="text-sm text-[#2E96F5]">Hurghada 2025</div>
+                  <div className="font-['Fira_Sans'] font-bold">NASA Space Apps Hurghada</div>
+                  <div className="text-sm text-[#2E96F5]">2nd Edition - 2025</div>
                 </div>
               </div>
               <p className="text-sm text-gray-600">
@@ -609,8 +650,8 @@ export default function NASASpaceAppsHurghada() {
               <div className="space-y-2">
                 <div className="flex items-center space-x-2 text-sm">
                   <Mail className="w-4 h-4 text-[#2E96F5]" />
-                  <Link href="mailto:ismailsherifwork@gmail.com" className="hover:text-[#2E96F5] transition-colors">
-                    ismailsherifwork@gmail.com
+                  <Link href="mailto:info@spaceappshurghada.info" className="hover:text-[#2E96F5] transition-colors">
+                    info@spaceappshurghada.info
                   </Link>
                 </div>
                 <div className="flex items-center space-x-2 text-sm">
@@ -625,13 +666,21 @@ export default function NASASpaceAppsHurghada() {
             <div className="space-y-4">
               <h3 className="font-['Fira_Sans'] font-bold text-lg">Follow Us</h3>
               <div className="flex space-x-4">
-                {["LinkedIn", "Facebook", "Instagram", "X"].map((social) => (
+                {socials.map((social) => (
                   <Link
-                    key={social}
-                    href="#"
-                    className="w-10 h-10 bg-[#0042A6]/20 rounded-full flex items-center justify-center hover:bg-[#2E96F5]/20 transition-colors"
+                  key={social.name}
+                  href={social.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 bg-[#0042A6]/20 rounded-full flex items-center justify-center hover:bg-[#2E96F5]/20 transition-colors"
                   >
-                    <span className="text-xs">{social[0]}</span>
+                  <span className="sr-only">{social.name}</span>
+                  {/* Replace with icon components if available */}
+                  <img
+                    src={`/svg/${social.icon}.svg`}
+                    alt={social.name}
+                    className="w-5 h-5"
+                  />
                   </Link>
                 ))}
               </div>
@@ -639,7 +688,7 @@ export default function NASASpaceAppsHurghada() {
           </div>
 
           <div className="border-t border-[#0042A6]/20 mt-8 pt-8 text-center">
-            <p className="text-sm text-gray-600">© 2025 NASA Space Apps Challenge - Hurghada. All rights reserved.</p>
+            <p className="text-sm text-gray-600">© 2025 NASA Space Apps Hurghada. All rights reserved.</p>
           </div>
         </div>
       </footer>
