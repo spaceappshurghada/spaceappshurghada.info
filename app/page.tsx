@@ -58,27 +58,9 @@ export default function NASASpaceAppsHurghada() {
   const teamMembers = [
     {
       name: "Ismail Sherif",
-      role: "Lead Organizer",
+      role: "Chairman",
       bio: "Tech leader and community builder passionate about space innovation",
       image: "/tech-leader-headshot.png",
-    },
-    {
-      name: "Sarah Ahmed",
-      role: "Technical Coordinator",
-      bio: "Software engineer with expertise in NASA data systems",
-      image: "/female-engineer-headshot.png",
-    },
-    {
-      name: "Mohamed Hassan",
-      role: "Community Manager",
-      bio: "Event organizer focused on building inclusive tech communities",
-      image: "/community-manager-headshot.png",
-    },
-    {
-      name: "Fatima El-Sayed",
-      role: "Mentor Coordinator",
-      bio: "Data scientist connecting participants with industry experts",
-      image: "/data-scientist-headshot.png",
     },
   ]
 
@@ -122,12 +104,12 @@ export default function NASASpaceAppsHurghada() {
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-3">
-              <div className="w-12 h-12 bg-[#0042A6] rounded-full flex items-center justify-center">
-                <Rocket className="w-6 h-6 text-gray-900" />
+              <div className="w-12 h-12 flex items-center justify-center">
+                <a href="https://spaceappshurghada.info"> <img src="/img/logo.png" alt="Logo" /> </a>
               </div>
               <div>
-                <div className="font-['Fira_Sans'] font-bold text-lg">NASA Space Apps</div>
-                <div className="text-sm text-[#2E96F5]">Hurghada 2025</div>
+                <div className="font-['Fira_Sans'] font-bold text-lg">NASA Space Apps Hurghada</div>
+                <div className="text-sm text-[#2E96F5]">2nd Edition, 2025</div>
               </div>
             </div>
 
