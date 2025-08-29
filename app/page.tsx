@@ -231,32 +231,32 @@ export default function NASASpaceAppsHurghada() {
               <div className="flex flex-col sm:flex-row gap-4 items-start">
                 <div className="flex items-center space-x-2 text-[#2E96F5]">
                   <Calendar className="w-5 h-5" />
-                  <span className="font-semibold">October 4-6, 2025</span>
+                  <span className="font-semibold">October 4-5, 2025</span>
                 </div>
                 <div className="flex items-center space-x-2 text-[#2E96F5]">
                   <MapPin className="w-5 h-5" />
                   <span className="font-semibold">Marine Sports Club, Hurghada</span>
                 </div>
               </div>
-
-              <Button
-                onClick={() => scrollToSection("register")}
-                className="bg-[#EAFE07] hover:bg-[#EAFE07]/90 text-[#07173F] font-bold text-lg px-8 py-6 rounded-lg transition-all duration-300 transform hover:scale-105"
-              >
-                Register Now
-              </Button>
+              <div className="mt-10">
+                <a href="https://www.spaceappschallenge.org/2025/local-events/hurghada" target="_blank">
+                  <Button className="bg-[#EAFE07] hover:bg-[#EAFE07]/90 text-[#07173F] font-bold text-lg px-8 py-6 transition-all duration-300 transform hover:scale-105 rounded-xl">
+                    Register Now
+                  </Button>
+                </a>
+              </div>
             </div>
 
             <div className="flex justify-center relative">
               {/* Main rectangular hero image */}
               <div className="relative">
-                <div className="overflow-hidden border-2 border-[#2E96F5]/30 rounded-lg">
+                <div className="overflow-hidden border-2 border-[#2E96F5]/30 rounded-2xl">
                   <Image
-                    src="/img/closing.jpg"
+                    src="/img/closing.webp"
                     alt="NASA Space Apps participants collaborating"
                     width={384}
                     height={256}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover rounded-xl"
                   />
                 </div>
 
@@ -288,13 +288,13 @@ export default function NASASpaceAppsHurghada() {
             {/* Add global map image */}
             <div className="w-full max-w-2xl mx-auto mb-8">
               <div className="relative">
-                <div className="w-full h-48 rounded-lg overflow-hidden border border-[#2E96F5]/30">
+                <div className="w-full h-48 overflow-hidden border border-[#2E96F5]/30 rounded-2xl">
                   <Image
                     src="/img/opening.jpg"
                     alt="Global NASA Space Apps Challenge locations"
                     width={640}
                     height={192}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover rounded-xl"
                   />
                 </div>
 
@@ -334,10 +334,10 @@ export default function NASASpaceAppsHurghada() {
               ].map((item, index) => (
                 <Card
                   key={index}
-                  className="bg-white border-[#0042A6]/20 hover:border-[#2E96F5]/50 transition-colors shadow-sm"
+                  className="bg-white border-[#0042A6]/20 hover:border-[#2E96F5]/50 transition-colors shadow-sm rounded-2xl"
                 >
                   <CardContent className="p-6 text-center space-y-4">
-                    <div className="w-12 h-12 bg-[#2E96F5]/20 rounded-full flex items-center justify-center mx-auto">
+                    <div className="w-12 h-12 bg-[#2E96F5]/20 flex items-center justify-center mx-auto rounded-2xl">
                       <item.icon className="w-6 h-6 text-[#2E96F5]" />
                     </div>
                     <p className="text-sm">{item.title}</p>
@@ -365,14 +365,14 @@ export default function NASASpaceAppsHurghada() {
                     },
                     {
                       day: "Day 2 – October 5",
-                      activities: "Full hack day with mentor sessions.",
+                      activities: "2nd hack day, Final presentations, judging, and award ceremony.",
                     },
-                    {
-                      day: "Day 3 – October 6",
-                      activities: "Final presentations, judging, and award ceremony.",
-                    },
+                    // {
+                    //   day: "Day 3 – October 6",
+                    //   activities: "",
+                    // },
                   ].map((item, index) => (
-                    <Card key={index} className="bg-blue-50 border-[#2E96F5]/30">
+                    <Card key={index} className="bg-blue-50 border-[#2E96F5]/30 rounded-2xl">
                       <CardContent className="p-6">
                         <h3 className="font-['Fira_Sans'] font-bold text-xl text-[#2E96F5] mb-2">{item.day}</h3>
                         <p className="text-gray-600">{item.activities}</p>
@@ -382,14 +382,14 @@ export default function NASASpaceAppsHurghada() {
                 </div>
 
                 <div className="grid sm:grid-cols-2 gap-6">
-                  <Card className="bg-white border-[#0042A6]/20 shadow-sm">
+                  <Card className="bg-white border-[#0042A6]/20 shadow-sm rounded-2xl">
                     <CardContent className="p-6 text-center">
                       <Users className="w-8 h-8 text-[#2E96F5] mx-auto mb-2" />
                       <div className="font-bold text-2xl">200–300</div>
                       <div className="text-sm text-gray-500">Participants</div>
                     </CardContent>
                   </Card>
-                  <Card className="bg-white border-[#0042A6]/20 shadow-sm">
+                  <Card className="bg-white border-[#0042A6]/20 shadow-sm rounded-2xl">
                     <CardContent className="p-6 text-center">
                       <Users className="w-8 h-8 text-[#2E96F5] mx-auto mb-2" />
                       <div className="font-bold text-2xl">40–60</div>
@@ -401,7 +401,7 @@ export default function NASASpaceAppsHurghada() {
 
               <div className="space-y-6">
                 {/* Venue exterior shot */}
-                <Card className="bg-blue-50 border-[#2E96F5]/30">
+                <Card className="bg-blue-50 border-[#2E96F5]/30 rounded-2xl">
                   <CardContent className="p-6">
                     <h3 className="font-['Fira_Sans'] font-bold text-xl text-[#2E96F5] mb-4">
                       Venue: Marine Sports Club, Hurghada
@@ -412,12 +412,12 @@ export default function NASASpaceAppsHurghada() {
                         alt="Marine Sports Club Hurghada exterior"
                         width={400}
                         height={192}
-                        className="w-full h-full object-cover"
+                        className="w-full h-full object-cover rounded-2xl"
                       />
                     </div>
 
                     {/* Circular cutouts showing activities */}
-                    <div className="flex justify-between mt-4">
+                    {/* <div className="flex justify-between mt-4">
                       <div className="w-20 h-20 rounded-full overflow-hidden border-2 border-[#2E96F5]/30">
                         <Image
                           src="/hacking-in-progress-circle.png"
@@ -436,10 +436,10 @@ export default function NASASpaceAppsHurghada() {
                           className="w-full h-full object-cover"
                         />
                       </div>
-                    </div>
+                    </div> */}
 
                     <p className="text-gray-600 mt-4">
-                      Two halls for hacking & presentations, arranged for comfort and productivity.
+                      1 hall for hacking & presentations, arranged for comfort and productivity.
                     </p>
                   </CardContent>
                 </Card>
@@ -465,7 +465,7 @@ export default function NASASpaceAppsHurghada() {
               {challenges.map((challenge, index) => (
                 <Card
                   key={index}
-                  className="bg-white border-[#0042A6]/20 hover:border-[#2E96F5]/50 transition-all duration-300 hover:transform hover:scale-105 shadow-sm"
+                  className="bg-white border-[#0042A6]/20 hover:border-[#2E96F5]/50 transition-all duration-300 hover:transform hover:scale-105 shadow-sm rounded-2xl"
                 >
                   <CardContent className="p-8 text-center space-y-4">
                     {/* Circular NASA image for "planet" feel */}
@@ -545,7 +545,7 @@ export default function NASASpaceAppsHurghada() {
 
               {/* Team group photo */}
               <div className="w-full max-w-3xl mx-auto mb-8">
-                <div className="w-full h-64 rounded-lg overflow-hidden border border-[#2E96F5]/30">
+                <div className="w-full h-64 overflow-hidden border border-[#2E96F5]/30 rounded-2xl">
                   <Image
                     src="/organizing-team-group-photo.png"
                     alt="NASA Space Apps Hurghada organizing team"
@@ -557,7 +557,7 @@ export default function NASASpaceAppsHurghada() {
               </div>
 
               <p className="text-lg text-gray-600">
-                Led by Ismail Sherif, our organizing team is a group of passionate volunteers, tech leaders, and
+                Our organizing team is a group of passionate volunteers, tech leaders, and
                 community builders making this event a success.
               </p>
             </div>
@@ -566,10 +566,10 @@ export default function NASASpaceAppsHurghada() {
               {teamMembers.map((member, index) => (
                 <Card
                   key={index}
-                  className="bg-white border-[#0042A6]/20 hover:border-[#2E96F5]/50 transition-all duration-300 shadow-sm"
+                  className="bg-white border-[#0042A6]/20 hover:border-[#2E96F5]/50 transition-all duration-300 shadow-sm rounded-2xl"
                 >
                   <CardContent className="p-6 text-center space-y-4">
-                    <div className="w-24 h-24 rounded-full overflow-hidden mx-auto border-2 border-[#2E96F5]/30">
+                    <div className="w-24 h-24 rounded-full overflow-hidden mx-auto border-2 border-[#2E96F5]/30 ">
                       <Image
                         src={member.image || "/placeholder.svg"}
                         alt={member.name}
@@ -601,10 +601,14 @@ export default function NASASpaceAppsHurghada() {
             <p className="text-lg text-gray-600">
               Seats are limited — secure your spot today and be part of NASA's global innovation movement!
             </p>
-            <Button className="bg-[#EAFE07] hover:bg-[#EAFE07]/90 text-[#07173F] font-bold text-xl px-12 py-8 rounded-lg transition-all duration-300 transform hover:scale-105">
-              Register Now
-              <ExternalLink className="w-5 h-5 ml-2" />
-            </Button>
+            <div className="mt-10">
+              <a href="https://www.spaceappschallenge.org/2025/local-events/hurghada" target="_blank">
+                <Button className="bg-[#EAFE07] hover:bg-[#EAFE07]/90 text-[#07173F] font-bold text-xl px-12 py-8 transition-all duration-300 transform hover:scale-105 rounded-2xl">
+                  Register Now
+                  <ExternalLink className="w-5 h-5 ml-2"/>
+                </Button>
+              </a>
+            </div>
           </div>
         </div>
       </section>
