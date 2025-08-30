@@ -207,7 +207,7 @@ export default function NASASpaceAppsHurghada() {
           className="absolute inset-0 w-full h-full object-cover z-0"
           style={{ filter: "brightness(0.3) contrast(0.8)" }}
         >
-          <source src="/videos/first-edition.webm" type="video/webm" />
+          <source src="/video/first-edition.webm" type="video/webm" />
         </video>
 
         <div
@@ -254,32 +254,6 @@ export default function NASASpaceAppsHurghada() {
                 </Button>
               </div>
             </div>
-
-            {/* <div className="flex justify-center relative">
-              <div className="relative">
-                <div className="overflow-hidden border-2 border-[#2E96F5]/30 rounded-xl">
-                  <Image
-                    src="/img/closing.webp"
-                    alt="NASA Space Apps participants collaborating"
-                    width={384}
-                    height={256}
-                    className="w-full h-full object-cover rounded-xl"
-                  />
-                </div>
-                <div className="absolute -bottom-8 -right-8 w-32 h-32 rounded-full overflow-hidden border-4 border-[#07173F] bg-[#07173F]">
-                  <Image
-                    src="/earth-from-space-nasa.png"
-                    alt="Earth from space"
-                    width={128}
-                    height={128}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div className="absolute -top-4 -right-4 w-16 h-16 bg-[#E43700] rounded-full flex items-center justify-center animate-pulse">
-                  <Rocket className="w-8 h-8 text-gray-900" />
-                </div>
-              </div>
-            </div> */}
           </div>
         </div>
       </section>
@@ -300,16 +274,17 @@ export default function NASASpaceAppsHurghada() {
                     className="w-full h-full object-cover rounded-xl"
                   />
                 </div>
-
-                {/* Small circular collaboration photo */}
-                <div className="absolute -bottom-6 -right-6 w-24 h-24 rounded-full overflow-hidden border-4 border-[#07173F] bg-[#07173F]">
+                <div className="absolute -bottom-5 -left-5 w-16 h-16 rounded-full overflow-hidden border-2 border-[#07173F] bg-[#07173F] animate-pulse">
                   <Image
-                    src="/team-collaboration-circle.png"
-                    alt="Team collaboration"
-                    width={96}
-                    height={96}
+                    src="/img/earth.png"
+                    alt="Earth from space"
+                    width={128}
+                    height={128}
                     className="w-full h-full object-cover"
                   />
+                </div>
+                <div className="absolute -top-5 -right-5 w-16 h-16 bg-[#E43700] rounded-full flex items-center justify-center animate-pulse">
+                  <Rocket className="w-8 h-8 text-white" />
                 </div>
               </div>
             </div>
