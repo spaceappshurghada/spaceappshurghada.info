@@ -199,25 +199,17 @@ export default function NASASpaceAppsHurghada() {
         id="hero"
         className="min-h-screen flex items-center relative overflow-hidden bg-gradient-to-br from-gray-50 to-white"
       >
-        <div
-          className="absolute inset-0 opacity-10"
-          style={{
-            background: "linear-gradient(45deg, #0042A6 0%, #2E96F5 100%)",
-          }}
-        />
-         <video
+        <video
           autoPlay
           loop
           muted
           playsInline
-          className="absolute inset-0 w-full h-full object-cover z-0 blur-sm"
+          className="absolute inset-0 w-full h-full object-cover z-0"
+          style={{ filter: "brightness(0.3) contrast(0.8)" }}
         >
           <source src="/videos/first-edition.webm" type="video/webm" />
-          {/* Fallback for browsers that don't support the video tag */}
-          Your browser does not support the video tag.
         </video>
 
-        {/* NASA Space Apps pattern overlay */}
         <div
           className="absolute inset-0 opacity-25"
           style={{
@@ -227,42 +219,45 @@ export default function NASASpaceAppsHurghada() {
         />
 
         <div className="container mx-auto px-4 relative z-10">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="items-center text-center">
             <div className="space-y-8">
-              <div className="space-y-4">
-                <h1 className="font-['Fira_Sans'] font-bold text-4xl md:text-6xl lg:text-7xl leading-tight">
-                  NASA Space Apps Hurghada
-                  <span className="block text-[#2E96F5]">2nd Edition</span>
+              <div className="space-y-4 items-center text-center">
+                <h1 className="font-['Fira_Sans'] font-bold text-6xl md:text-6xl lg:text-8xl leading-tight text-white">
+                  {/* NASA Space Apps Hurghada */}
+                  <span className="block text-[#E43700]">2nd Edition</span>
                 </h1>
-                <p className="text-lg md:text-xl text-gray-600 max-w-2xl">
+                <p className="mx-auto text-center text-lg md:text-xl text-gray-400 max-w-2xl">
                   Join the world's largest global hackathon, where thousands innovate using NASA's open data to solve
                   problems on Earth and in space.
                 </p>
               </div>
 
-              <div className="flex flex-col sm:flex-row gap-4 items-start">
-                <div className="flex items-center space-x-2 text-[#2E96F5]">
+              <div className="flex flex-col sm:flex-row gap-4 items-center justify-center">
+                <div className="flex items-center text-center space-x-2 text-white">
                   <Calendar className="w-5 h-5" />
                   <span className="font-semibold">October 4-5, 2025</span>
                 </div>
-                <div className="flex items-center space-x-2 text-[#2E96F5]">
+                <div className="flex items-center text-center space-x-2 text-white">
                   <MapPin className="w-5 h-5" />
                   <span className="font-semibold">Marine Sports Club, Hurghada</span>
                 </div>
               </div>
-              <div className="mt-10">
+              <div className="mt-10 space-x-4">
                 <a href="https://www.spaceappschallenge.org/2025/local-events/hurghada" target="_blank">
-                  <Button className="bg-[#EAFE07] hover:bg-[#EAFE07]/90 text-[#07173F] font-bold text-lg px-8 py-6 transition-all duration-300 transform hover:scale-105 rounded-xl">
-                    Register Now
+                  <Button className="bg-[#EAFE07] hover:bg-[#EAFE07]/90 text-[#07173F] font-bold text-xl p-8 transition-all duration-300 transform hover:scale-105 rounded-xl">
+                    Global Registration
+                    <ExternalLink className="w-5 h-5 ml-2"/>
                   </Button>
                 </a>
+                <Button className="bg-[#EAFE07] hover:bg-[#EAFE07]/90 text-[#07173F] font-bold text-xl p-8 transition-all duration-300 transform hover:scale-105 rounded-xl" disabled>
+                  Local Registration (SOON)
+                </Button>
               </div>
             </div>
 
-            <div className="flex justify-center relative">
-              {/* Main rectangular hero image */}
+            {/* <div className="flex justify-center relative">
               <div className="relative">
-                <div className="overflow-hidden border-2 border-[#2E96F5]/30 rounded-2xl">
+                <div className="overflow-hidden border-2 border-[#2E96F5]/30 rounded-xl">
                   <Image
                     src="/img/closing.webp"
                     alt="NASA Space Apps participants collaborating"
@@ -271,8 +266,6 @@ export default function NASASpaceAppsHurghada() {
                     className="w-full h-full object-cover rounded-xl"
                   />
                 </div>
-
-                {/* Overlapping circular accent image */}
                 <div className="absolute -bottom-8 -right-8 w-32 h-32 rounded-full overflow-hidden border-4 border-[#07173F] bg-[#07173F]">
                   <Image
                     src="/earth-from-space-nasa.png"
@@ -282,13 +275,11 @@ export default function NASASpaceAppsHurghada() {
                     className="w-full h-full object-cover"
                   />
                 </div>
-
-                {/* Rocket accent */}
                 <div className="absolute -top-4 -right-4 w-16 h-16 bg-[#E43700] rounded-full flex items-center justify-center animate-pulse">
                   <Rocket className="w-8 h-8 text-gray-900" />
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
@@ -300,7 +291,7 @@ export default function NASASpaceAppsHurghada() {
             {/* Add global map image */}
             <div className="w-full max-w-2xl mx-auto mb-8">
               <div className="relative">
-                <div className="w-full h-48 overflow-hidden border border-[#2E96F5]/30 rounded-2xl">
+                <div className="w-full h-48 overflow-hidden border border-[#2E96F5]/30 rounded-xl">
                   <Image
                     src="/img/opening.jpg"
                     alt="Global NASA Space Apps Challenge locations"
@@ -346,10 +337,10 @@ export default function NASASpaceAppsHurghada() {
               ].map((item, index) => (
                 <Card
                   key={index}
-                  className="bg-white border-[#0042A6]/20 hover:border-[#2E96F5]/50 transition-colors shadow-sm rounded-2xl"
+                  className="bg-white border-[#0042A6]/20 hover:border-[#2E96F5]/50 transition-colors shadow-sm rounded-xl"
                 >
                   <CardContent className="p-6 text-center space-y-4">
-                    <div className="w-12 h-12 bg-[#2E96F5]/20 flex items-center justify-center mx-auto rounded-2xl">
+                    <div className="w-12 h-12 bg-[#2E96F5]/20 flex items-center justify-center mx-auto rounded-xl">
                       <item.icon className="w-6 h-6 text-[#2E96F5]" />
                     </div>
                     <p className="text-sm">{item.title}</p>
@@ -384,7 +375,7 @@ export default function NASASpaceAppsHurghada() {
                     //   activities: "",
                     // },
                   ].map((item, index) => (
-                    <Card key={index} className="bg-blue-50 border-[#2E96F5]/30 rounded-2xl">
+                    <Card key={index} className="bg-blue-50 border-[#2E96F5]/30 rounded-xl">
                       <CardContent className="p-6">
                         <h3 className="font-['Fira_Sans'] font-bold text-xl text-[#2E96F5] mb-2">{item.day}</h3>
                         <p className="text-gray-600">{item.activities}</p>
@@ -394,14 +385,14 @@ export default function NASASpaceAppsHurghada() {
                 </div>
 
                 <div className="grid sm:grid-cols-2 gap-6">
-                  <Card className="bg-white border-[#0042A6]/20 shadow-sm rounded-2xl">
+                  <Card className="bg-white border-[#0042A6]/20 shadow-sm rounded-xl">
                     <CardContent className="p-6 text-center">
                       <Users className="w-8 h-8 text-[#2E96F5] mx-auto mb-2" />
                       <div className="font-bold text-2xl">200–300</div>
                       <div className="text-sm text-gray-500">Participants</div>
                     </CardContent>
                   </Card>
-                  <Card className="bg-white border-[#0042A6]/20 shadow-sm rounded-2xl">
+                  <Card className="bg-white border-[#0042A6]/20 shadow-sm rounded-xl">
                     <CardContent className="p-6 text-center">
                       <Users className="w-8 h-8 text-[#2E96F5] mx-auto mb-2" />
                       <div className="font-bold text-2xl">40–60</div>
@@ -413,7 +404,7 @@ export default function NASASpaceAppsHurghada() {
 
               <div className="space-y-6">
                 {/* Venue exterior shot */}
-                <Card className="bg-blue-50 border-[#2E96F5]/30 rounded-2xl">
+                <Card className="bg-blue-50 border-[#2E96F5]/30 rounded-xl">
                   <CardContent className="p-6">
                     <h3 className="font-['Fira_Sans'] font-bold text-xl text-[#2E96F5] mb-4">
                       Venue: Marine Sports Club, Hurghada
@@ -424,7 +415,7 @@ export default function NASASpaceAppsHurghada() {
                         alt="Marine Sports Club Hurghada exterior"
                         width={400}
                         height={192}
-                        className="w-full h-full object-cover rounded-2xl"
+                        className="w-full h-full object-cover rounded-xl"
                       />
                     </div>
 
@@ -477,7 +468,7 @@ export default function NASASpaceAppsHurghada() {
               {challenges.map((challenge, index) => (
                 <Card
                   key={index}
-                  className="bg-white border-[#0042A6]/20 hover:border-[#2E96F5]/50 transition-all duration-300 hover:transform hover:scale-105 shadow-sm rounded-2xl"
+                  className="bg-white border-[#0042A6]/20 hover:border-[#2E96F5]/50 transition-all duration-300 hover:transform hover:scale-105 shadow-sm rounded-xl"
                 >
                   <CardContent className="p-8 text-center space-y-4">
                     {/* Circular NASA image for "planet" feel */}
@@ -557,7 +548,7 @@ export default function NASASpaceAppsHurghada() {
 
               {/* Team group photo */}
               <div className="w-full max-w-3xl mx-auto mb-8">
-                <div className="w-full h-64 overflow-hidden border border-[#2E96F5]/30 rounded-2xl">
+                <div className="w-full h-64 overflow-hidden border border-[#2E96F5]/30 rounded-xl">
                   <Image
                     src="/organizing-team-group-photo.png"
                     alt="NASA Space Apps Hurghada organizing team"
@@ -578,7 +569,7 @@ export default function NASASpaceAppsHurghada() {
               {teamMembers.map((member, index) => (
                 <Card
                   key={index}
-                  className="bg-white border-[#0042A6]/20 hover:border-[#2E96F5]/50 transition-all duration-300 shadow-sm rounded-2xl"
+                  className="bg-white border-[#0042A6]/20 hover:border-[#2E96F5]/50 transition-all duration-300 shadow-sm rounded-xl"
                 >
                   <CardContent className="p-6 text-center space-y-4">
                     <div className="w-24 h-24 rounded-full overflow-hidden mx-auto border-2 border-[#2E96F5]/30 ">
@@ -615,7 +606,7 @@ export default function NASASpaceAppsHurghada() {
             </p>
             <div className="mt-10">
               <a href="https://www.spaceappschallenge.org/2025/local-events/hurghada" target="_blank">
-                <Button className="bg-[#EAFE07] hover:bg-[#EAFE07]/90 text-[#07173F] font-bold text-xl px-12 py-8 transition-all duration-300 transform hover:scale-105 rounded-2xl">
+                <Button className="bg-[#EAFE07] hover:bg-[#EAFE07]/90 text-[#07173F] font-bold text-xl px-12 py-8 transition-all duration-300 transform hover:scale-105 rounded-xl">
                   Register Now
                   <ExternalLink className="w-5 h-5 ml-2"/>
                 </Button>
