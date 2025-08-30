@@ -205,6 +205,18 @@ export default function NASASpaceAppsHurghada() {
             background: "linear-gradient(45deg, #0042A6 0%, #2E96F5 100%)",
           }}
         />
+         <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover z-0 blur-sm"
+        >
+          <source src="/videos/first-edition.webm" type="video/webm" />
+          {/* Fallback for browsers that don't support the video tag */}
+          Your browser does not support the video tag.
+        </video>
+
         {/* NASA Space Apps pattern overlay */}
         <div
           className="absolute inset-0 opacity-25"
