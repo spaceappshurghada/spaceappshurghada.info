@@ -284,7 +284,7 @@ export default function NASASpaceAppsHurghada() {
                   />
                 </div>
                 <div className="absolute -top-5 -right-5 w-16 h-16 bg-[#E43700] rounded-full flex items-center justify-center animate-pulse">
-                  <Rocket className="w-8 h-8 text-white" />
+                  <Rocket className="w-8 h-8 text-white"/>
                 </div>
               </div>
             </div>
@@ -297,9 +297,8 @@ export default function NASASpaceAppsHurghada() {
                 150+ countries in using NASA's free and open data to tackle real-world challenges on Earth and beyond.
               </p>
               <p>
-                This year, Hurghada joins the global movement! Our local event will bring together innovators, coders,
-                designers, scientists, and storytellers to collaborate and create solutions that could make a difference
-                globally.
+                Our local event will bring together innovators, coders, designers, scientists, and storytellers to
+                collaborate and create solutions that could make a difference globally.
               </p>
             </div>
 
@@ -328,11 +327,15 @@ export default function NASASpaceAppsHurghada() {
       </section>
 
       {/* Event Details Section */}
-      <section id="details" className="py-20">
+      <section id="details" className="py-20"
+        style={{ backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%230042A6' strokeWidth='0.5' opacity='0.1'%3E%3Cpath d='M0,30 L60,30 M30,0 L30,60'/%3E%3Ccircle cx='30' cy='30' r='10'/%3E%3C/g%3E%3C/svg%3E")`,
+          backgroundSize: "60px 60px",
+        }}
+      >
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <h2 className="font-['Fira_Sans'] font-bold text-3xl md:text-5xl text-center mb-16">Event Schedule</h2>
-
+            
             <div className="grid lg:grid-cols-2 gap-12">
               <div className="space-y-8">
                 <div className="space-y-6">
@@ -428,7 +431,19 @@ export default function NASASpaceAppsHurghada() {
       </section>
 
       {/* Challenges Section */}
-      <section id="challenges" className="py-20 bg-gray-50">
+      {/* <section id="challenges" className="py-20 bg-gray-50"> */}
+      <section id="challenges" className="py-20">
+        {/* <div className="absolute inset-0 opacity-10 z-0"
+          style={{
+          backgroundImage: 'url("/img/closing.webp")',
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          filter: "brightness(0.3) contrast(0.8)"
+        }}
+        >
+        </div> */}
+        {/* <div className="absolute inset-0 bg-white/80 pointer-events-none" /> */}
+        <div className="relative z-10"></div>
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
