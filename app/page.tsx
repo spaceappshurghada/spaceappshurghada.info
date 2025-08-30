@@ -242,14 +242,14 @@ export default function NASASpaceAppsHurghada() {
                   <span className="font-semibold">Marine Sports Club, Hurghada</span>
                 </div>
               </div>
-              <div className="mt-10 space-x-4">
+              <div className="mt-10">
                 <a href="https://www.spaceappschallenge.org/2025/local-events/hurghada" target="_blank">
-                  <Button className="bg-[#EAFE07] hover:bg-[#EAFE07]/90 text-[#07173F] font-bold text-xl p-8 transition-all duration-300 transform hover:scale-105 rounded-xl">
-                    Global Registration
+                  <Button className="bg-[#EAFE07] hover:bg-[#EAFE07]/90 text-[#07173F] font-bold text-xl me-0 mb-5 lg:me-5 lg:mb-0 p-8 transition-all duration-300 transform hover:scale-105 rounded-xl">
+                    Global Registration Open
                     <ExternalLink className="w-5 h-5 ml-2"/>
                   </Button>
                 </a>
-                <Button className="bg-[#EAFE07] hover:bg-[#EAFE07]/90 text-[#07173F] font-bold text-xl p-8 transition-all duration-300 transform hover:scale-105 rounded-xl" disabled>
+                <Button className="bg-[#EAFE07] hover:bg-[#EAFE07]/90 text-[#07173F] font-bold text-xl px-10 py-8 transition-all duration-300 transform hover:scale-105 rounded-xl" disabled>
                   Local Registration (SOON)
                 </Button>
               </div>
@@ -607,7 +607,7 @@ export default function NASASpaceAppsHurghada() {
             <div className="mt-10">
               <a href="https://www.spaceappschallenge.org/2025/local-events/hurghada" target="_blank">
                 <Button className="bg-[#EAFE07] hover:bg-[#EAFE07]/90 text-[#07173F] font-bold text-xl px-12 py-8 transition-all duration-300 transform hover:scale-105 rounded-xl">
-                  Register Now
+                  Register Globally Now
                   <ExternalLink className="w-5 h-5 ml-2"/>
                 </Button>
               </a>
@@ -631,7 +631,6 @@ export default function NASASpaceAppsHurghada() {
           <div className="grid md:grid-cols-3 gap-8">
             <div className="space-y-4">
               <div className="flex items-center space-x-3">
-                {/* NASA Space Apps Small Logo */}
                 <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center p-2">
                   <Image
                     src="/img/logo.png"
@@ -682,7 +681,6 @@ export default function NASASpaceAppsHurghada() {
                   className="w-10 h-10 bg-[#0042A6]/20 rounded-full flex items-center justify-center hover:bg-[#2E96F5]/20 transition-colors"
                   >
                   <span className="sr-only">{social.name}</span>
-                  {/* Replace with icon components if available */}
                   <img
                     src={`/svg/${social.icon}.svg`}
                     alt={social.name}
