@@ -213,7 +213,7 @@ export default function NASASpaceAppsHurghada() {
         <div
           className="absolute inset-0 opacity-25"
           style={{
-            backgroundImage: `url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%23FFFFFF' strokeWidth='1' opacity='0.2'%3E%3Ccircle cx='50' cy='50' r='20'/%3E%3Ccircle cx='50' cy='50' r='35'/%3E%3Cpath d='M20,50 Q50,20 80,50 Q50,80 20,50'/%3E%3C/g%3E%3C/svg%3E")`,
+            backgroundImage: `url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%23FFFFFF' strokeWidth='1' opacity='0.15'%3E%3Ccircle cx='50' cy='50' r='20'/%3E%3Ccircle cx='50' cy='50' r='35'/%3E%3Cpath d='M20,50 Q50,20 80,50 Q50,80 20,50'/%3E%3C/g%3E%3C/svg%3E")`,
             backgroundSize: "100px 100px",
           }}
         />
