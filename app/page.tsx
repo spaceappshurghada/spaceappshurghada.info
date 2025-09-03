@@ -111,14 +111,15 @@ export default function NASASpaceAppsHurghada() {
   ]
 
   return (
-    <div className="min-h-screen bg-white text-gray-900 font-['Overpass']">
+    // diable text selection
+    <div className="min-h-screen bg-white text-gray-900 font-['Overpass'] select-none">
       {/* Navigation */}
       <nav className="fixed top-0 w-full z-50 bg-white/95 backdrop-blur-sm border-b border-[#0042A6]/20 shadow-sm">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-3">
               <div className="w-12 h-12 flex items-center justify-center">
-                <a href="https://spaceappshurghada.info"> <img src="/img/logo.png" alt="Logo" /> </a>
+                <img src="/img/spaceappshurghada.png" alt="Logo" />
               </div>
               <div>
                 <div className="font-['Fira_Sans'] font-bold text-lg">NASA Space Apps Hurghada</div>
@@ -247,11 +248,11 @@ export default function NASASpaceAppsHurghada() {
               <div className="relative">
                 <div className="w-full h-48 overflow-hidden border border-[#2E96F5]/30 rounded-xl">
                   <Image
-                    src="/img/opening.jpg"
+                    src="/img/end.jpg"
                     alt="Global NASA Space Apps Challenge locations"
                     width={640}
                     height={192}
-                    className="w-full h-full object-cover rounded-xl"
+                    className="w-full h-full object-cover rounded-xl filter brightness-75 hover:scale-105 transition-transform duration-300 saturate-150"
                   />
                 </div>
                 <div className="absolute -bottom-5 -left-5 w-16 h-16 rounded-full overflow-hidden border-2 border-[#07173F] bg-[#07173F] animate-pulse">
@@ -355,7 +356,9 @@ export default function NASASpaceAppsHurghada() {
                 </div>
               </div>
 
-              <div className="space-y-6">
+              <div className="space-y-6 hover:cursor-pointer"
+                onClick={() => window.open("https://www.sunrise-resorts.com/garden-beach-resort", "_blank")}
+              >
                 <Card className="bg-blue-50 border-[#2E96F5]/30 rounded-xl">
                   <CardContent className="p-6">
                     <h3 className="font-['Fira_Sans'] font-bold text-xl text-[#2E96F5] mb-4 text-center">
@@ -367,7 +370,7 @@ export default function NASASpaceAppsHurghada() {
                         alt="Marine Sports Club Hurghada exterior"
                         width={400}
                         height={400}
-                        className="w-full h-full object-fit rounded-xl"
+                        className="w-full h-full object-fit rounded-xl saturate-150"
                       />
                     </div>
 
@@ -378,6 +381,20 @@ export default function NASASpaceAppsHurghada() {
                 </Card>
               </div>
             </div>
+          </div>
+        </div>
+
+        <div className="container mx-auto px-4 mt-12">
+          <div className="mx-auto max-w-6xl h-64 md:h-96 rounded-xl overflow-hidden border border-[#2E96F5]/30 shadow-lg">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4881.299153073905!2d33.8264653!3d27.098205!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145280264be510a3%3A0x96b2aef66f1d07df!2sSUNRISE%20Garden%20Beach%20Resort%20-Select-!5e1!3m2!1sen!2seg!4v1756937620335!5m2!1sen!2seg"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen={false}
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
         </div>
       </section>
@@ -510,7 +527,7 @@ export default function NASASpaceAppsHurghada() {
               <div className="flex items-center space-x-3">
                 <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center p-2">
                   <Image
-                    src="/img/logo.png"
+                    src="/img/spaceappshurghada.png"
                     alt="NASA Space Apps Logo"
                     width={32}
                     height={32}
