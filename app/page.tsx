@@ -104,9 +104,9 @@ export default function NASASpaceAppsHurghada() {
       url: "https://www.instagram.com/spaceappshurghada",
     },
     {
-      name: "GitHub",
-      icon: "github",
-      url: "https://github.com/spaceappshurghada",
+      name: "YouTube",
+      icon: "youtube",
+      url: "https://youtube.com/@spaceappshurghada",
     },
   ]
 
