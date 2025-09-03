@@ -112,9 +112,9 @@ export default function NASASpaceAppsHurghada() {
 
   return (
     // diable text selection
-    <div className="min-h-screen bg-white text-gray-900 font-['Overpass'] select-none">
+    <div className="min-h-screen bg-white text-gray-900 font-['Overpass']">
       {/* Navigation */}
-      <nav className="fixed top-0 w-full z-50 bg-white/95 backdrop-blur-sm border-b border-[#0042A6]/20 shadow-sm">
+      <nav className="fixed top-0 w-full z-50 bg-white/95 backdrop-blur-sm border-b border-[#0042A6]/20 shadow-sm select-none">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-3">
