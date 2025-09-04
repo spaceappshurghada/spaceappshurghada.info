@@ -21,7 +21,6 @@ import {
 } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
-import { link } from "fs"
 
 export default function NASASpaceAppsHurghada() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
