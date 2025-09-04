@@ -7,12 +7,12 @@ const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: "NASA Space Apps Hurghada",
-  description: "Join the world's largest global hackathon in Hurghada, Egypt. October 4-5, 2025. Innovate using NASA's open data to solve problems on Earth and in space.",
-  keywords: "NASA, Space Apps, NASA Space Apps, NASA Space Apps Hurghada, challenge, hackathon, hurghada, Egypt, space, innovation, technology",
+  description: "Join the world's largest global hackathon in Hurghada, Egypt. October 4-5, 2025 at SUNRISE Garden Beach Resort. Innovate using NASA's open data to solve problems on Earth and in space.",
+  keywords: "NASA, Space Apps, NASA Space Apps, NASA Space Apps Hurghada, challenge, hackathon, hurghada, hurghada hackathon, Egypt, space, innovation, technology",
   authors: [{ name: "NASA Space Apps Hurghada" }],
   openGraph: {
     title: "NASA Space Apps Hurghada",
-    description: "Join the world's largest global hackathon in Hurghada, Egypt. October 4-5, 2025.",
+    description: "Join the world's largest global hackathon in Hurghada, Egypt. October 4-5, 2025 at SUNRISE Garden Beach Resort.",
     type: "website",
     locale: "en_US",
   },

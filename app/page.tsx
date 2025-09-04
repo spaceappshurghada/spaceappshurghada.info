@@ -367,7 +367,7 @@ export default function NASASpaceAppsHurghada() {
                     <div className="w-full rounded-lg overflow-hidden mb-4">
                       <Image
                         src="/img/sunrise-garden.webp"
-                        alt="Marine Sports Club Hurghada exterior"
+                        alt="SUNRISE Garden Beach Resort"
                         width={400}
                         height={400}
                         className="w-full h-full object-fit rounded-xl saturate-150"
