@@ -58,7 +58,7 @@ export default function NASASpaceAppsHurghada() {
   const teamMembers = [
     {
       name: "Ismail Sherif",
-      role: "Local Lead",
+      role: "Chairman",
       bio: "Building tech communities to empower young innovators",
       image: "/img/team/ismail.png",
       linkedin: "https://www.linkedin.com/in/thisismrismail/",
