@@ -55,6 +55,31 @@ export default function NASASpaceAppsHurghada() {
     setIsMenuOpen(false)
   }
 
+  type SponsorTierId = "gold" | "silver" | "bronze" | "community";
+
+  type Sponsor = {
+    name: string;
+    logo: string;
+    url: string;
+  };
+
+  const SponsorTiers: { id: SponsorTierId; name: string; color: string }[] = [
+    { id: "gold", name: "Gold Sponsors", color: "#FBBF24" },
+    { id: "silver", name: "Silver Sponsors", color: "#9CA3AF" },
+    { id: "bronze", name: "Bronze Sponsors", color: "#92400E" },
+    { id: "community", name: "Community Partners", color: "#2E96F5" },
+  ];
+
+  const sponsors: Record<SponsorTierId, Sponsor[]> = {
+    gold: [
+      { name: "Sunrise Resorts & Cruises", logo: "/img/collaborators/sunrise.png", url: "https://www.sunrise-resorts.com" },
+      { name: "BlueWaves", logo: "/img/collaborators/bluewaves.png", url: "https://bluewavesegypt.com" },
+    ],
+    silver: [],
+    bronze: [],
+    community: [],
+  };
+
   const teamMembers = [
     {
       name: "Ismail Sherif",
@@ -111,7 +136,7 @@ export default function NASASpaceAppsHurghada() {
 
   return (
     // diable text selection
-    <div className="min-h-screen bg-white text-gray-900 font-['Overpass']">
+    <div className="min-h-screen bg-white text-gray-900 font-['Overpass'] select-none">
       {/* Navigation */}
       <nav className="fixed top-0 w-full z-50 bg-white/95 backdrop-blur-sm border-b border-[#0042A6]/20 shadow-sm select-none">
         <div className="container mx-auto px-4 py-4">
@@ -138,9 +163,8 @@ export default function NASASpaceAppsHurghada() {
                     }
                     scrollToSection(item.toLowerCase())
                   }}
-                  className={`text-sm hover:text-[#0042A6] transition-colors ${
-                    activeSection === item.toLowerCase() ? "text-[#0042A6]" : "text-gray-700"
-                  }`}
+                  className={`text-sm hover:text-[#0042A6] transition-colors ${activeSection === item.toLowerCase() ? "text-[#0042A6]" : "text-gray-700"
+                    }`}
                 >
                   {item}
                 </button>
@@ -228,7 +252,7 @@ export default function NASASpaceAppsHurghada() {
                 <a href="https://www.spaceappschallenge.org/2025/local-events/hurghada" target="_blank">
                   <Button className="bg-[#EAFE07] hover:bg-[#EAFE07]/90 text-[#07173F] font-bold text-xl me-0 mb-5 lg:me-5 lg:mb-0 p-8 transition-all duration-300 transform hover:scale-105 rounded-xl">
                     Global Registration Open
-                    <ExternalLink className="w-5 h-5 ml-2"/>
+                    <ExternalLink className="w-5 h-5 ml-2" />
                   </Button>
                 </a>
                 <Button className="bg-[#EAFE07] hover:bg-[#EAFE07]/90 text-[#07173F] font-bold text-xl px-10 py-8 transition-all duration-300 transform hover:scale-105 rounded-xl" disabled>
@@ -247,7 +271,7 @@ export default function NASASpaceAppsHurghada() {
               <div className="relative">
                 <div className="w-full h-48 overflow-hidden border border-[#2E96F5]/30 rounded-xl">
                   <Image
-                    src="/img/end.jpg"
+                    src="/img/closing.webp"
                     alt="Global NASA Space Apps Challenge locations"
                     width={640}
                     height={192}
@@ -264,7 +288,7 @@ export default function NASASpaceAppsHurghada() {
                   />
                 </div>
                 <div className="absolute -top-5 -right-5 w-16 h-16 bg-[#E43700] rounded-full flex items-center justify-center animate-pulse">
-                  <Rocket className="w-8 h-8 text-white"/>
+                  <Rocket className="w-8 h-8 text-white" />
                 </div>
               </div>
             </div>
@@ -307,14 +331,15 @@ export default function NASASpaceAppsHurghada() {
       </section>
 
       <section id="details" className="py-20"
-        style={{ backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%230042A6' strokeWidth='0.5' opacity='0.1'%3E%3Cpath d='M0,30 L60,30 M30,0 L30,60'/%3E%3Ccircle cx='30' cy='30' r='10'/%3E%3C/g%3E%3C/svg%3E")`,
+        style={{
+          backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%230042A6' strokeWidth='0.5' opacity='0.1'%3E%3Cpath d='M0,30 L60,30 M30,0 L30,60'/%3E%3Ccircle cx='30' cy='30' r='10'/%3E%3C/g%3E%3C/svg%3E")`,
           backgroundSize: "60px 60px",
         }}
       >
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <h2 className="font-['Fira_Sans'] font-bold text-3xl md:text-5xl text-center mb-16">Event Schedule</h2>
-            
+
             <div className="grid lg:grid-cols-2 gap-12">
               <div className="space-y-8">
                 <div className="space-y-6">
@@ -356,16 +381,16 @@ export default function NASASpaceAppsHurghada() {
               </div>
 
               <div className="space-y-6 hover:cursor-pointer"
-                onClick={() => window.open("https://www.sunrise-resorts.com/garden-beach-resort", "_blank")}
+                onClick={() => window.open("https://maps.app.goo.gl/8X7Vwa6iE3zxVqRA9", "_blank")}
               >
                 <Card className="bg-blue-50 border-[#2E96F5]/30 rounded-xl">
                   <CardContent className="p-6">
                     <h3 className="font-['Fira_Sans'] font-bold text-xl text-[#2E96F5] mb-4 text-center">
-                      SUNRISE Garden Beach Resort
+                      Venue: SUNRISE Garden Beach Resort
                     </h3>
                     <div className="w-full rounded-lg overflow-hidden mb-4">
                       <Image
-                        src="/img/sunrise-garden.webp"
+                        src="/img/collaborators/sunrise-garden-gate.webp"
                         alt="SUNRISE Garden Beach Resort"
                         width={400}
                         height={400}
@@ -398,33 +423,48 @@ export default function NASASpaceAppsHurghada() {
         </div>
       </section>
 
-      {/* Sponsors Section */}
+      {/* Event Host Section */}
       <section id="sponsors" className="py-20">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto text-center">
+            <h2 className="font-['Fira_Sans'] font-bold text-3xl md:text-5xl mb-6">Event Host</h2>
+            <p className="text-lg text-gray-600 mb-16">
+              Special thanks to our event host for providing an exceptional venue and support for NASA Space Apps Hurghada.
+            </p>
+
+            <div className="flex items-center justify-center hover:scale-105 transition-transform duration-300">
+              <a href="https://www.sunrise-resorts.com/garden-beach-resort" target="_blank">
+                <img src="/img/collaborators/sunrise-garden-colored.png" width={350} alt="SUNRISE" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Sponsors Section */}
+      <section id="sponsors" className="py-20" >
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto text-center">
             <h2 className="font-['Fira_Sans'] font-bold text-3xl md:text-5xl mb-6">Our Sponsors & Partners</h2>
             <p className="text-lg text-gray-600 mb-16">
-              We thank our amazing partners for helping make NASA Space Apps Hurghada possible.
+              We thank our amazing collaborators for helping make NASA Space Apps Hurghada possible.
             </p>
 
             <div className="space-y-12">
-              {[
-                { tier: "Gold Sponsors", color: "#FBBF24" },
-                { tier: "Silver Sponsors", color: "#9CA3AF" },
-                { tier: "Bronze Sponsors", color: "#92400E" },
-                { tier: "Community Partners", color: "#2E96F5" },
-              ].map((sponsorTier, index) => (
+              {SponsorTiers.map((tier, index) => (
                 <div key={index}>
-                  <h3 className="font-['Fira_Sans'] font-bold text-xl mb-8" style={{ color: sponsorTier.color }}>
-                    {sponsorTier.tier}
+                  <h3 className="font-['Fira_Sans'] font-bold text-xl mb-8" style={{ color: tier.color }}>
+                    {tier.name}
                   </h3>
-                  <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8">
-                    {[1, 2, 3, 4, 5].map((logo) => (
+                  <div className="flex flex-wrap justify-center gap-10">
+                    {sponsors[tier.id].map((sponsor) => (
                       <div
-                        key={logo}
-                        className="bg-white/10 rounded-lg p-6 flex items-center justify-center h-24 hover:bg-white/20 transition-colors"
+                        key={sponsor.name}
+                        className="flex items-center justify-center h-24 w-40 hover:scale-105 transition-transform duration-300"
                       >
-                        <div className="text-xs text-gray-500">Logo {logo}</div>
+                        <a href={sponsor.url} target="_blank">
+                          <img src={sponsor.logo} alt={sponsor.name} />
+                        </a>
                       </div>
                     ))}
                   </div>
@@ -434,6 +474,7 @@ export default function NASASpaceAppsHurghada() {
           </div>
         </div>
       </section>
+
 
       {/* Team Section */}
       <section id="team" className="py-20 bg-gray-50">
@@ -502,7 +543,7 @@ export default function NASASpaceAppsHurghada() {
               <a href="https://www.spaceappschallenge.org/2025/local-events/hurghada" target="_blank">
                 <Button className="bg-[#EAFE07] hover:bg-[#EAFE07]/90 text-[#07173F] font-bold text-xl px-12 py-8 transition-all duration-300 transform hover:scale-105 rounded-xl">
                   Register Globally Now
-                  <ExternalLink className="w-5 h-5 ml-2"/>
+                  <ExternalLink className="w-5 h-5 ml-2" />
                 </Button>
               </a>
             </div>
@@ -567,18 +608,18 @@ export default function NASASpaceAppsHurghada() {
               <div className="flex space-x-4">
                 {socials.map((social) => (
                   <Link
-                  key={social.name}
-                  href={social.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-10 h-10 bg-[#0042A6]/20 rounded-full flex items-center justify-center hover:bg-[#2E96F5]/20 transition-colors"
+                    key={social.name}
+                    href={social.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-10 h-10 bg-[#0042A6]/20 rounded-full flex items-center justify-center hover:bg-[#2E96F5]/20 transition-colors"
                   >
-                  <span className="sr-only">{social.name}</span>
-                  <img
-                    src={`/svg/${social.icon}.svg`}
-                    alt={social.name}
-                    className="w-5 h-5"
-                  />
+                    <span className="sr-only">{social.name}</span>
+                    <img
+                      src={`/svg/${social.icon}.svg`}
+                      alt={social.name}
+                      className="w-5 h-5"
+                    />
                   </Link>
                 ))}
               </div>
