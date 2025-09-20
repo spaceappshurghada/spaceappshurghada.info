@@ -1,6 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
+import { useRouter } from 'next/navigation';
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
@@ -10,10 +11,7 @@ import {
     Users,
     Rocket,
     BarChart3,
-    Bot,
     Microscope,
-    Mail,
-    Phone,
     ExternalLink,
     Menu,
     X,
@@ -26,10 +24,11 @@ import Footer from "@/components/footer"
 export default function NASASpaceAppsHurghada() {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
     const [activeSection, setActiveSection] = useState("hero")
+    const router = useRouter();
 
     useEffect(() => {
         const handleScroll = () => {
-            const sections = ["hero", "about", "details", "challenges", "sponsors", "team", "register"]
+            const sections = ["hero", "about", "details", "challenges", "sponsors", "team", "register", "collaboration"]
             const scrollPosition = window.scrollY + 100
 
             for (const section of sections) {
@@ -130,12 +129,16 @@ export default function NASASpaceAppsHurghada() {
 
                         {/* Desktop Navigation */}
                         <div className="hidden md:flex items-center space-x-8">
-                            {["About", "Details", "Challenges", "Sponsors", "Team", "Register"].map((item) => (
+                            {["About", "Details", "Challenges", "Sponsors", "Team", "Register", "Collaboration"].map((item) => (
                                 <button
                                     key={item}
                                     onClick={() => {
                                         if (item === "Challenges") {
                                             window.open("https://www.spaceappschallenge.org/2025/challenges", "_blank")
+                                            return
+                                        }
+                                        if (item === "Collaboration") {
+                                            router.push("/collaboration")
                                             return
                                         }
                                         scrollToSection(item.toLowerCase())
