@@ -456,11 +456,11 @@ export default function NASASpaceAppsHurghada() {
                   <h3 className="font-['Fira_Sans'] font-bold text-xl mb-8" style={{ color: tier.color }}>
                     {tier.name}
                   </h3>
-                  <div className="flex flex-wrap justify-center gap-10">
+                  <div className="flex flex-wrap items-center justify-center gap-6 lg:gap-16">
                     {sponsors[tier.id].map((sponsor) => (
                       <div
                         key={sponsor.name}
-                        className="flex items-center justify-center h-24 w-40 hover:scale-105 transition-transform duration-300"
+                        className="flex items-center justify-center h-24 w-48 hover:scale-105 transition-transform duration-300"
                       >
                         <a href={sponsor.url} target="_blank">
                           <img src={sponsor.logo} alt={sponsor.name} />
@@ -474,7 +474,6 @@ export default function NASASpaceAppsHurghada() {
           </div>
         </div>
       </section>
-
 
       {/* Team Section */}
       <section id="team" className="py-20 bg-gray-50">
