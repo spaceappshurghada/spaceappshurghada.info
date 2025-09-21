@@ -243,7 +243,7 @@ export default function NASASpaceAppsHurghada() {
                                         <ExternalLink className="w-5 h-5 ml-2" />
                                     </Button>
                                 </a>
-                                <a href="https://docs.google.com/forms/d/e/1FAIpQLScXp6UvcurBi43Mf9W5O4vB1ZDbEenkO5IIoy5e_KeVzEGy0g" target="_blank">
+                                <a href="https://docs.google.com/forms/d/e/1FAIpQLScXp6UvcurBi43Mf9W5O4vB1ZDbEenkO5IIoy5e_KeVzEGy0g/viewform" target="_blank">
                                     <Button className="bg-[#EAFE07] hover:bg-[#EAFE07]/90 text-[#07173F] font-bold text-xl me-0 mb-5 lg:me-5 lg:mb-0 p-8 transition-all duration-300 transform hover:scale-105 rounded-xl">
                                         Local Registration Open
                                         <ExternalLink className="w-5 h-5 ml-2" />
