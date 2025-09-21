@@ -75,9 +75,16 @@ export default function NASASpaceAppsHurghada() {
             { name: "Sunrise Resorts & Cruises", logo: "/img/collaborators/sunrise.png", url: "https://www.sunrise-resorts.com" },
             { name: "BlueWaves", logo: "/img/collaborators/bluewaves.png", url: "https://bluewavesegypt.com" },
         ],
-        silver: [],
-        bronze: [],
-        community: [],
+        silver: [
+
+        ],
+        bronze: [
+
+        ],
+        community: [
+            { name: "2Code Academy", logo: "/img/collaborators/2code-academy.png", url: "https://www.facebook.com/profile.php?id=61580494251243" },
+            { name: "GDG On Campus SVU", logo: "/img/collaborators/gdg-svu-black.png", url: "https://gdg.community.dev/gdg-on-campus-south-valley-university-qena-egypt/" },
+        ],
     };
 
     const teamMembers = [
@@ -440,10 +447,11 @@ export default function NASASpaceAppsHurghada() {
                                         {sponsors[tier.id].map((sponsor) => (
                                             <div
                                                 key={sponsor.name}
-                                                className="flex items-center justify-center h-24 w-48 hover:scale-105 transition-transform duration-300"
+                                                className="flex items-center justify-center rounded-xl hover:scale-105 transition-transform duration-300"
                                             >
-                                                <a href={sponsor.url} target="_blank">
-                                                    <img src={sponsor.logo} alt={sponsor.name} />
+                                                <a href={sponsor.url} target="_blank"
+                                                    className="rounded-xl">
+                                                    <img src={sponsor.logo} alt={sponsor.name} className="rounded-xl h-16 w-auto" />
                                                 </a>
                                             </div>
                                         ))}
