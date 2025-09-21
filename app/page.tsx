@@ -527,10 +527,16 @@ export default function NASASpaceAppsHurghada() {
                         <p className="text-lg text-gray-600">
                             Seats are limited — secure your spot today and be part of NASA's global innovation movement!
                         </p>
-                        <div className="mt-10">
+                        <div className="mt-10 gap-8 flex flex-col sm:flex-row items-center justify-center">
                             <a href="https://www.spaceappschallenge.org/2025/local-events/hurghada" target="_blank">
                                 <Button className="bg-[#EAFE07] hover:bg-[#EAFE07]/90 text-[#07173F] font-bold text-xl px-12 py-8 transition-all duration-300 transform hover:scale-105 rounded-xl">
                                     Register Globally Now
+                                    <ExternalLink className="w-5 h-5 ml-2" />
+                                </Button>
+                            </a>
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLScXp6UvcurBi43Mf9W5O4vB1ZDbEenkO5IIoy5e_KeVzEGy0g/viewform" target="_blank">
+                                <Button className="bg-[#EAFE07] hover:bg-[#EAFE07]/90 text-[#07173F] font-bold text-xl px-12 py-8 transition-all duration-300 transform hover:scale-105 rounded-xl">
+                                    Register Locally Now
                                     <ExternalLink className="w-5 h-5 ml-2" />
                                 </Button>
                             </a>
