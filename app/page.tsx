@@ -82,9 +82,9 @@ export default function NASASpaceAppsHurghada() {
 
         ],
         community: [
+            { name: "GDG On Campus HUN", logo: "/img/collaborators/gdg-hurghada.png", url: "https://gdg.community.dev/gdg-on-campus-hurghada-faculty-of-computers-artificial-intelligence-hurghada-egypt/" },
             { name: "2Code Academy", logo: "/img/collaborators/2code-academy.png", url: "https://www.facebook.com/profile.php?id=61580494251243" },
             { name: "GDG On Campus SVU", logo: "/img/collaborators/gdg-svu-black.png", url: "https://gdg.community.dev/gdg-on-campus-south-valley-university-qena-egypt/" },
-            { name: "GDG On Campus HUN", logo: "/img/collaborators/gdg-hun.png", url: "https://gdg.community.dev/gdg-on-campus-hurghada-faculty-of-computers-artificial-intelligence-hurghada-egypt/" },
         ],
     };
 
