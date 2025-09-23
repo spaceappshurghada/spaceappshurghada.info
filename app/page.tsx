@@ -76,15 +76,16 @@ export default function NASASpaceAppsHurghada() {
             { name: "BlueWaves", logo: "/img/collaborators/bluewaves.png", url: "https://bluewavesegypt.com" },
         ],
         silver: [
-
+            // { name: "Hadaf Solutions", logo: "/img/collaborators/hadaf.png", url: "https://hadafsolutions.net" },
         ],
         bronze: [
-
+            
         ],
         community: [
-            { name: "GDG On Campus HUN", logo: "/img/collaborators/gdg-hurghada.png", url: "https://gdg.community.dev/gdg-on-campus-hurghada-faculty-of-computers-artificial-intelligence-hurghada-egypt/" },
+            { name: "GDG On Campus HUN", logo: "/img/collaborators/gdg-hurghada.png", url: "https://gdg.community.dev/gdg-on-campus-hurghada-faculty-of-computers-artificial-intelligence-hurghada-egypt" },
+            { name: "Codewars egypt", logo: "/img/collaborators/codewars-logo.png", url: "https://codewarsegypt.com" },
             { name: "2Code Academy", logo: "/img/collaborators/2code-academy.png", url: "https://www.facebook.com/profile.php?id=61580494251243" },
-            { name: "GDG On Campus SVU", logo: "/img/collaborators/gdg-svu-black.png", url: "https://gdg.community.dev/gdg-on-campus-south-valley-university-qena-egypt/" },
+            { name: "GDG On Campus SVU", logo: "/img/collaborators/gdg-svu-black.png", url: "https://gdg.community.dev/gdg-on-campus-south-valley-university-qena-egypt" },
         ],
     };
 
@@ -449,7 +450,8 @@ export default function NASASpaceAppsHurghada() {
                                     </h3>
                                     <div className="flex flex-wrap items-center justify-center gap-6 lg:gap-16">
                                         {sponsors[tier.id].map((sponsor) => (
-                                            <div key={sponsor.name} className="flex items-center justify-center rounded-xl hover:scale-105 transition-transform duration-300">
+                                            <div key={sponsor.name} className="flex items-center justify-center rounded-xl hover:scale-105 transition-transform duration-300"
+                                                title={sponsor.name}>
                                                 <a href={sponsor.url} target="_blank"
                                                     className="rounded-xl">
                                                     <img src={sponsor.logo} alt={sponsor.name} className="rounded-xl h-16 w-auto" />
