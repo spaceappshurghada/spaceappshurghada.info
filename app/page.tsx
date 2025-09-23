@@ -79,7 +79,7 @@ export default function NASASpaceAppsHurghada() {
             // { name: "Hadaf Solutions", logo: "/img/collaborators/hadaf.png", url: "https://hadafsolutions.net" },
         ],
         bronze: [
-            
+        
         ],
         community: [
             { name: "GDG On Campus HUN", logo: "/img/collaborators/gdg-hurghada.png", url: "https://gdg.community.dev/gdg-on-campus-hurghada-faculty-of-computers-artificial-intelligence-hurghada-egypt" },
