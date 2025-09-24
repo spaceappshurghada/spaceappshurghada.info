@@ -175,6 +175,20 @@ export default function NASASpaceAppsHurghada() {
             linkedin: "https://www.linkedin.com/in/mohammed-said-388732282",
         },
         {
+            name: "Mohamed Abdulrahim",
+            role: "Mentors Team",
+            bio: "Mohamed Abdulrahim - Mentors Team, NASA Space Apps Hurghada",
+            image: "/img/team/mohamed_abdulrahim.png",
+            linkedin: "https://www.linkedin.com/in/mohammedabdulrahim-/",
+        },
+        {
+            name: "Jovaney Atef",
+            role: "Mentors Team",
+            bio: "Jovaney Atef Mores - Mentors Team, NASA Space Apps Hurghada",
+            image: "/img/team/jovaney.png",
+            linkedin: "https://linkedin.com/in/jovaney-atef-35b4ab2a4",
+        },
+        {
             name: "Omnia Ahmed",
             role: "Marketing Team",
             bio: "Omnia Ahmed Abdel Rahim - Marketing Team, NASA Space Apps Hurghada",
@@ -243,13 +257,6 @@ export default function NASASpaceAppsHurghada() {
             bio: "Alaa Azam - Media Team, NASA Space Apps Hurghada",
             image: "/img/team/alaa.png",
             linkedin: "https://linkedin.com/in/alaa-azam-a1230b289",
-        },
-        {
-            name: "Jovaney Atef",
-            role: "Mentors Team",
-            bio: "Jovaney Atef Mores - Mentors Team, NASA Space Apps Hurghada",
-            image: "/img/team/jovaney.png",
-            linkedin: "https://linkedin.com/in/jovaney-atef-35b4ab2a4",
         },
         {
             name: "Shahd Omar",
