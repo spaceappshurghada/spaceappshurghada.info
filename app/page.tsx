@@ -79,7 +79,7 @@ export default function NASASpaceAppsHurghada() {
             // { name: "Hadaf Solutions", logo: "/img/collaborators/hadaf.png", url: "https://hadafsolutions.net" },
         ],
         bronze: [
-        
+
         ],
         community: [
             { name: "GDG On Campus HUN", logo: "/img/collaborators/gdg-hurghada.png", url: "https://gdg.community.dev/gdg-on-campus-hurghada-faculty-of-computers-artificial-intelligence-hurghada-egypt" },
@@ -105,6 +105,13 @@ export default function NASASpaceAppsHurghada() {
             linkedin: "https://www.linkedin.com/in/merna-atef-74995321b/",
         },
         {
+            name: "Victor Nisem",
+            role: "Technical Director",
+            bio: "Victor Nisem Farid - Development Team, NASA Space Apps Hurghada",
+            image: "/img/team/victor.png",
+            linkedin: "https://linkedin.com/in/victor-nisem",
+        },
+        {
             name: "Zeyad Fouad",
             role: "PR & Outreach Director",
             bio: "Zeyad Fouad - PR & Outreach Director, NASA Space Apps Hurghada",
@@ -118,7 +125,175 @@ export default function NASASpaceAppsHurghada() {
             image: "/img/team/reyad.png",
             linkedin: "https://www.linkedin.com/in/reyad-mohamed-46a46424b/",
         },
-    ]
+        {
+            name: "Ammar Yasser",
+            role: "Dev Team Director",
+            bio: "Ammar Yasser Abdelmonam - Development Team, NASA Space Apps Hurghada",
+            image: "/img/team/ammar.png",
+            linkedin: "https://linkedin.com/in/ammar-yasser-326a17279",
+        },
+        {
+            name: "Mohamed Essam",
+            role: "Development Team",
+            bio: "Mohamed Essam Mohamed - Development Team, NASA Space Apps Hurghada",
+            image: "/img/team/essam.png",
+            linkedin: "",
+        },
+        {
+            name: "Eslam Mokhtar",
+            role: "Development Team",
+            bio: "Eslam Mokhtar Mohamed - Development Team, NASA Space Apps Hurghada",
+            image: "/img/team/eslam.png",
+            linkedin: "http://linkedin.com/in/eslam-mokhtar",
+        },
+        {
+            name: "Mina Hany",
+            role: "Development Team",
+            bio: "Mina Hany Hanna - Development Team, NASA Space Apps Hurghada",
+            image: "/img/team/mina.png",
+            linkedin: "",
+        },
+        {
+            name: "Seif Mohamed",
+            role: "Development Team",
+            bio: "Seif Mohamed Mamdouh - Development Team, NASA Space Apps Hurghada",
+            image: "/img/team/seif.png",
+            linkedin: "",
+        },
+        {
+            name: "Yusuf Hussien",
+            role: "Development Team",
+            bio: "Yusuf Hussien - Development Team, NASA Space Apps Hurghada",
+            image: "/img/team/yusuf.png",
+            linkedin: "https://linkedin.com/in/yusuf-7ussien",
+        },
+        {
+            name: "Mohammed Said",
+            role: "Development Team",
+            bio: "Mohammed Said Ahmed - Development Team, NASA Space Apps Hurghada",
+            image: "/img/team/mohammed_said.png",
+            linkedin: "",
+        },
+        {
+            name: "Omnia Ahmed",
+            role: "Marketing Team",
+            bio: "Omnia Ahmed Abdel Rahim - Marketing Team, NASA Space Apps Hurghada",
+            image: "/img/team/omnia.png",
+            linkedin: "https://linkedin.com/in/omnia-abdel-rahim-84b5aa2a5",
+        },
+        {
+            name: "Malak Abdelraheem",
+            role: "Marketing Team",
+            bio: "Malak Abdelraheem Ahmed - Marketing Team, NASA Space Apps Hurghada",
+            image: "/img/team/malak.png",
+            linkedin: "https://linkedin.com/in/malak-ahmad-970307276",
+        },
+        {
+            name: "Shaza Samir",
+            role: "Marketing Team",
+            bio: "Shaza Samir Mohamed - Marketing Team, NASA Space Apps Hurghada",
+            image: "/img/team/shaza.png",
+            linkedin: "https://linkedin.com/in/shaza-elqsass-39b2b6280",
+        },
+        {
+            name: "Marvel Reda",
+            role: "Marketing Team",
+            bio: "Marvel Reda Farage - Marketing Team, NASA Space Apps Hurghada",
+            image: "/img/team/marvel.png",
+            linkedin: "https://linkedin.com/in/marvel-reda",
+        },
+        {
+            name: "Haneen Ali",
+            role: "Marketing Team",
+            bio: "Haneen Ali Mohamed - Marketing Team, NASA Space Apps Hurghada",
+            image: "/img/team/haneen.png",
+            linkedin: "https://linkedin.com/in/haneen-ali-71b91834b",
+        },
+        {
+            name: "Mariam Ramadan",
+            role: "Media Team",
+            bio: "Mariam Ramadan Ahmed - Media Team, NASA Space Apps Hurghada",
+            image: "/img/team/mariam_ramadan.png",
+            linkedin: "https://linkedin.com/in/mariamramadan99",
+        },
+        {
+            name: "Diana Ebrahim",
+            role: "Media Team",
+            bio: "Diana Ebrahim Esmael - Media Team, NASA Space Apps Hurghada",
+            image: "/img/team/diana.png",
+            linkedin: "",
+        },
+        {
+            name: "Wafaa Hossam",
+            role: "Media Team",
+            bio: "Wafaa Hossam Fathy - Media Team, NASA Space Apps Hurghada",
+            image: "/img/team/wafaa.png",
+            linkedin: "https://linkedin.com/in/wafaa-hamzawy-06b3a425a",
+        },
+        {
+            name: "Mariam Nazer",
+            role: "Media Team",
+            bio: "Mariam Nazer Khalil - Media Team, NASA Space Apps Hurghada",
+            image: "/img/team/mariam_nazer.png",
+            linkedin: "https://linkedin.com/in/mariam-nazer-a50035283",
+        },
+        {
+            name: "Alaa Azam",
+            role: "Media Team",
+            bio: "Alaa Azam - Media Team, NASA Space Apps Hurghada",
+            image: "/img/team/alaa.png",
+            linkedin: "https://linkedin.com/in/alaa-azam-a1230b289",
+        },
+        {
+            name: "Jovaney Atef",
+            role: "Mentors Team",
+            bio: "Jovaney Atef Mores - Mentors Team, NASA Space Apps Hurghada",
+            image: "/img/team/jovaney.png",
+            linkedin: "https://linkedin.com/in/jovaney-atef-35b4ab2a4",
+        },
+        {
+            name: "Shahd Omar",
+            role: "PR & Outreach Team",
+            bio: "Shahd Omar - PR & Outreach Team, NASA Space Apps Hurghada",
+            image: "/img/team/shahd.png",
+            linkedin: "",
+        },
+        {
+            name: "Mariam Adel",
+            role: "PR & Outreach Team",
+            bio: "Mariam Adel Massoud - PR & Outreach Team, NASA Space Apps Hurghada",
+            image: "/img/team/mariam_adel.png",
+            linkedin: "https://linkedin.com/in/mariam-adel-a66315260",
+        },
+        {
+            name: "Samuel Mokhles",
+            role: "PR & Outreach Team",
+            bio: "Samuel Mokhles Talaat - PR & Outreach Team, NASA Space Apps Hurghada",
+            image: "/img/team/samuel.png",
+            linkedin: "https://linkedin.com/in/samuel-mokhles-615001331",
+        },
+        {
+            name: "Amira Mohamed",
+            role: "PR & Outreach Team",
+            bio: "Amira Mohamed Mohamed - PR & Outreach Team, NASA Space Apps Hurghada",
+            image: "/img/team/amira.png",
+            linkedin: "https://linkedin.com/in/amira-abdelgawad-54aa27222",
+        },
+        {
+            name: "Amina Hesham",
+            role: "PR & Outreach Team",
+            bio: "Amina Hesham Hassan - PR & Outreach Team, NASA Space Apps Hurghada",
+            image: "/img/team/amina.png",
+            linkedin: "https://linkedin.com/in/amina-hesham-a7654a2b5",
+        },
+        {
+            name: "Merna Ahmed",
+            role: "PR & Outreach Team",
+            bio: "Merna Ahmed Abdelgaid - PR & Outreach Team, NASA Space Apps Hurghada",
+            image: "/img/team/merna_ahmed.png",
+            linkedin: "https://linkedin.com/in/merna-ahmed-7926622a1",
+        },
+    ];
 
     return (
         <div className="min-h-screen bg-white text-gray-900 font-['Overpass'] select-none">
@@ -479,13 +654,13 @@ export default function NASASpaceAppsHurghada() {
                             </p>
                         </div>
 
-                        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                        <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-5">
                             {teamMembers.map((member, index) => (
                                 <Card
                                     key={index}
-                                    className="bg-white border-[#0042A6]/20 hover:border-[#2E96F5]/50 transition-all duration-300 shadow-sm rounded-xl"
+                                    className="bg-white border-[#0042A6]/20 hover:scale-105 hover:border-[#2E96F5]/50 transition-all duration-300 shadow-sm rounded-xl"
                                 >
-                                    <CardContent className="p-6 text-center space-y-3">
+                                    <CardContent className="p-3 text-center space-y-3">
                                         <div className="w-24 h-24 rounded-full overflow-hidden mx-auto border-2 border-[#2E96F5]/30 ">
                                             <Image
                                                 src={member.image}
@@ -496,7 +671,7 @@ export default function NASASpaceAppsHurghada() {
                                             />
                                         </div>
                                         <div>
-                                            <h3 className="font-['Fira_Sans'] font-bold text-lg">{member.name}</h3>
+                                            <h3 className="font-['Fira_Sans'] font-bold text-md">{member.name}</h3>
                                             <Badge variant="secondary" className="bg-[#2E96F5]/20 text-[#2E96F5] border-[#2E96F5]/30">
                                                 {member.role}
                                             </Badge>
