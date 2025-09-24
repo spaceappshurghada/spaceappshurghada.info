@@ -95,14 +95,14 @@ export default function NASASpaceAppsHurghada() {
             role: "Chairman",
             bio: "Building tech communities to empower young innovators",
             image: "/img/team/ismail.png",
-            linkedin: "https://www.linkedin.com/in/thisismrismail/",
+            linkedin: "https://www.linkedin.com/in/thisismrismail",
         },
         {
             name: "Merna Atef",
             role: "Co-Lead",
             bio: "Merna Atef - Co-Lead, NASA Space Apps Hurghada",
             image: "/img/team/merna.png",
-            linkedin: "https://www.linkedin.com/in/merna-atef-74995321b/",
+            linkedin: "https://www.linkedin.com/in/merna-atef-74995321b",
         },
         {
             name: "Victor Nisem",
@@ -116,14 +116,14 @@ export default function NASASpaceAppsHurghada() {
             role: "PR & Outreach Director",
             bio: "Zeyad Fouad - PR & Outreach Director, NASA Space Apps Hurghada",
             image: "/img/team/zeyad.png",
-            linkedin: "https://www.linkedin.com/in/zeyad-m-fouad-6773b4244/",
+            linkedin: "https://www.linkedin.com/in/zeyad-m-fouad-6773b4244",
         },
         {
             name: "Reyad Mohamed",
             role: "Marketing & Media Director",
             bio: "Reyad Mohamed - Marketing & Media Director, NASA Space Apps Hurghada",
             image: "/img/team/reyad.png",
-            linkedin: "https://www.linkedin.com/in/reyad-mohamed-46a46424b/",
+            linkedin: "https://www.linkedin.com/in/reyad-mohamed-46a46424b",
         },
         {
             name: "Ammar Yasser",
@@ -137,7 +137,7 @@ export default function NASASpaceAppsHurghada() {
             role: "Development Team",
             bio: "Mohamed Essam Mohamed - Development Team, NASA Space Apps Hurghada",
             image: "/img/team/essam.png",
-            linkedin: "",
+            linkedin: "https://www.linkedin.com/in/mohamed-essam-4a6b45234",
         },
         {
             name: "Eslam Mokhtar",
@@ -151,7 +151,7 @@ export default function NASASpaceAppsHurghada() {
             role: "Development Team",
             bio: "Mina Hany Hanna - Development Team, NASA Space Apps Hurghada",
             image: "/img/team/mina.png",
-            linkedin: "",
+            linkedin: "https://www.linkedin.com/in/mina-hany-659882233",
         },
         {
             name: "Seif Mohamed",
@@ -172,7 +172,7 @@ export default function NASASpaceAppsHurghada() {
             role: "Development Team",
             bio: "Mohammed Said Ahmed - Development Team, NASA Space Apps Hurghada",
             image: "/img/team/mohammed_said.png",
-            linkedin: "",
+            linkedin: "https://www.linkedin.com/in/mohammed-said-388732282",
         },
         {
             name: "Omnia Ahmed",
@@ -256,7 +256,7 @@ export default function NASASpaceAppsHurghada() {
             role: "PR & Outreach Team",
             bio: "Shahd Omar - PR & Outreach Team, NASA Space Apps Hurghada",
             image: "/img/team/shahd.png",
-            linkedin: "",
+            linkedin: "https://www.linkedin.com/in/shahd-omar-ahmed-38138a284",
         },
         {
             name: "Mariam Adel",
